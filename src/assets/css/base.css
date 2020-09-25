@@ -1,0 +1,141 @@
+﻿@charset "utf-8";
+/* CSS Document */
+/* 重构HTML全局属性 设置局部重用性样式 */
+* html, * html body { /*background-image:url(about:blank);*/ background-attachment:fixed }
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, form, label, table, caption, tbody, tfoot, thead, tr, th, td { margin:0; padding:0; border:0; outline:0; font-style:normal; text-decoration:none }
+ol, ul { list-style:none }
+blockquote, q { quotes:none }
+blockquote:before, blockquote:after, q:before, q:after { content:''; content:none }
+:focus { outline:0 }
+ins { text-decoration:none }
+del { text-decoration:line-through }
+table { border-collapse:collapse; border-spacing:0 }
+input[type="checkbox"]{margin:0; padding:0}
+body { font-family:"苹方","微软雅黑",Microsoft YaHei,Arial, Helvetica, sans-serif, "宋体"; font-size:14px; color:#07080a}
+a:link, a:visited, a:hover, a:active{ font-family:"微软雅黑",Microsoft YaHei,Arial, Helvetica, sans-serif, "宋体"; text-decoration:none; outline:none}
+a {color:#d74849;
+-webkit-transition: 0.2s ease-out;
+	-moz-transition: 0.2s ease-out;
+	-o-transition: 0.2s ease-out;
+	transition: 0.2s ease-out;
+}
+a:hover { color: #ba0103; text-decoration:none}
+a.underline{text-decoration:underline}
+/* globle class */
+.clear { clear:both; display:block; overflow:hidden; visibility:hidden; width:0px; height:0px }
+.clearfix:after { content:"\0020"; display:block; height:0; clear:both }
+.clearfix { _zoom:1 }
+*+html .clearfix { overflow:hidden}
+.close_select { -moz-user-select:none; -khtml-user-select:none }
+/* all */
+::-webkit-input-placeholder {color:#999}
+input:-moz-placeholder {color:#999}
+.fb { font-weight:bold }
+.f10 { font-size:10px }
+.f12 { font-size:12px }
+.f14 { font-size:14px }
+.f16 { font-size:16px }
+.f18 { font-size:18px }
+.f20 { font-size:20px; }
+.f22 { font-size:22px; }
+.f24 { font-size:24px; }
+.fb14 { font-size:14px; color:#ffffff; font-weight:bold; }
+.gray9 { color:#999 }
+.gray6 { color:#666 }
+.gray3 { color:#333 }
+.gray5 { color:#555555 }
+.blue{ color: #49a3f9; }
+.blue2{color:#58b365}
+.orange{ color:#f60 }
+.pik{color:#F06099}
+.red{color:#d74849}
+.purple{color:#7800A3}
+.pus{color:#DE0286}
+.yow{color:#faf305}
+.unline,a.unline{text-decoration:underline}
+/* margin&padding */
+.mt3{margin-top:3px}
+.m5 { margin:5px }
+.mt5 { margin-top:5px }
+.mr5 { margin-right:5px }
+.mb5 { margin-bottom:5px }
+.ml5 { margin-left:5px }
+.m10 { margin:10px }
+.mr10 { margin-right:10px }
+.mb10 { margin-bottom:10px }
+.ml10 { margin-left:10px}
+.mt10 { margin-top:10px; }
+.mt15{margin-top:15px}
+.ml15{margin-left:15px}
+.m20 { margin:20px }
+.mt20 { margin-top:20px }
+.mt30{margin-top:30px}
+.mt40 { margin-top:40px }
+.mt50 { margin-top:50px }
+.mr20 { margin-right:20px }
+.mb20 { margin-bottom:20px }
+.mb30 { margin-bottom:30px }
+.ml20 { margin-left:20px }
+.p10 { padding:10px; }
+.p20 { padding:20px; }
+.pt10b { padding-bottom:0 !important; padding-top:10px !important; border:none !important; }
+.pt10 { padding:0; padding-top:10px; }
+.pl20 { padding-left:20px; }
+.pl10 { padding-left:10px; }
+.pb20{padding-bottom:20px}
+.pb10{padding-bottom:10px}
+.pb15{padding-bottom:15px}
+.pb5{padding-bottom:5px}
+.fr { float:right; }
+.fl { float:left; }
+.border0{border:0}
+
+.uimask{background:#000; position:fixed; top:0; left:0; z-index:10; width:100%; height:100%; z-index:20;
+filter:alpha(opacity=60);
+-moz-opacity:0.6;
+-khtml-opacity: 0.6;
+opacity: 0.6;
+}
+.uimask_top{background:#000; position:fixed; top:106px; left:0; z-index:10; width:100%; height:100%; z-index:20;
+filter:alpha(opacity=60);
+-moz-opacity:0.6;
+-khtml-opacity: 0.6;
+opacity: 0.6;
+}
+
+.ico{display:inline-block; vertical-align:middle}
+.ico1{background:url("http://blog.tuzuyong.net/cqccn/images/ico1.png") no-repeat; width: 16px; height: 16px; background-size:100% 100%}
+.ico2{background:url("http://blog.tuzuyong.net/cqccn/images/ico2.png") no-repeat; width: 16px; height: 16px; background-size:100% 100%}
+.ico3{background:url("http://blog.tuzuyong.net/cqccn/images/ico3.png") no-repeat; width: 16px; height: 16px; background-size:100% 100%}
+.ico4{background:url("http://blog.tuzuyong.net/cqccn/images/ico4.png") no-repeat; width: 16px; height: 16px; background-size:100% 100%}
+.ico5{background:url("http://blog.tuzuyong.net/cqccn/images/ico5.png") no-repeat; width: 30px; height: 30px; background-size:100% 100%}
+.ico6{background:url("http://blog.tuzuyong.net/cqccn/images/ico6.png") no-repeat; width: 12px; height: 12px; background-size:100% 100%}
+.ico7{background:url("http://blog.tuzuyong.net/cqccn/images/ico7.png") no-repeat; width: 12px; height: 12px; background-size:100% 100%}
+.ico8{background:url("http://blog.tuzuyong.net/cqccn/images/ico8.png") no-repeat; width: 12px; height: 12px; background-size:100% 100%}
+.ico9{background:url("http://blog.tuzuyong.net/cqccn/images/ico9.png") no-repeat; width: 36px; height: 36px; background-size:100% 100%}
+.ico10{background:url("http://blog.tuzuyong.net/cqccn/images/ico10.png") no-repeat; width: 31px; height: 30px; background-size:100% 100%}
+.ico11{background:url("http://blog.tuzuyong.net/cqccn/images/ico11.png") no-repeat; width: 31px; height: 30px; background-size:100% 100%}
+.ico12{background:url("http://blog.tuzuyong.net/cqccn/images/ico12.png") no-repeat; width: 31px; height: 30px; background-size:100% 100%}
+.ico13{background:url("http://blog.tuzuyong.net/cqccn/images/ico13.png") no-repeat; width: 12px; height: 12px; background-size:100% 100%}
+
+.ico14{background:url("http://blog.tuzuyong.net/cqccn/images/ico14.png") no-repeat; width: 20px; height: 20px; background-size:100% 100%}
+.ico15{background:url("http://blog.tuzuyong.net/cqccn/images/ico15.png") no-repeat; width: 14px; height: 14px; background-size:100% 100%}
+
+.ico16{background:url("http://blog.tuzuyong.net/cqccn/images/ico16.png") no-repeat; width: 32px; height: 28px; background-size:100% 100%}
+.ico17{background:url("http://blog.tuzuyong.net/cqccn/images/ico17.png") no-repeat; width: 30px; height: 30px; background-size:100% 100%}
+.ico18{background:url("http://blog.tuzuyong.net/cqccn/images/ico18.png") no-repeat; width: 25px; height: 29px; background-size:100% 100%}
+.ico19{background:url("http://blog.tuzuyong.net/cqccn/images/ico19.png") no-repeat; width: 26px; height: 26px; background-size:100% 100%}
+.ico20{background:url("http://blog.tuzuyong.net/cqccn/images/ico20.png") no-repeat; width: 28px; height: 28px; background-size:100% 100%}
+.ico21{background:url("http://blog.tuzuyong.net/cqccn/images/ico21.png") no-repeat; width: 23px; height: 30px; background-size:100% 100%}
+.ico22{background:url("http://blog.tuzuyong.net/cqccn/images/ico22.png") no-repeat; width: 34px; height: 30px; background-size:100% 100%}
+.ico23{background:url("http://blog.tuzuyong.net/cqccn/images/ico23.png") no-repeat; width: 28px; height: 28px; background-size:100% 100%}
+.ico24{background:url("http://blog.tuzuyong.net/cqccn/images/ico24.png") no-repeat; width: 28px; height: 30px; background-size:100% 100%}
+.ico25{background:url("http://blog.tuzuyong.net/cqccn/images/ico25.png") no-repeat; width: 25px; height: 25px; background-size:100% 100%}
+
+.ico26{background:url("http://blog.tuzuyong.net/cqccn/images/ico26.png") no-repeat; width: 18px; height: 18px; background-size:100% 100%}
+.ico27{background:url("http://blog.tuzuyong.net/cqccn/images/ico27.png") no-repeat; width: 6px; height: 12px; background-size:100% 100%}
+.ico28{background:url("http://blog.tuzuyong.net/cqccn/images/ico28.png") no-repeat; width: 6px; height: 11px; background-size:100% 100%}
+
+.ico29{background:url("http://blog.tuzuyong.net/cqccn/images/ico29.png") no-repeat; width: 24px; height: 23px; background-size:100% 100%}
+.ico30{background:url("http://blog.tuzuyong.net/cqccn/images/ico30.png") no-repeat; width: 24px; height: 22px; background-size:100% 100%}
+.ico31{background:url("http://blog.tuzuyong.net/cqccn/images/ico31.png") no-repeat; width: 20px; height: 22px; background-size:100% 100%}
